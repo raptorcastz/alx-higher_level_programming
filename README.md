@@ -1,2 +1,2 @@
 # alx-higher_level_programming
-Python
+Sprint 2 on Python
