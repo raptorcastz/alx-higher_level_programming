@@ -25,10 +25,10 @@ def roman_to_int(roman_string):
     list_num = [0]
 
     for ch in roman_string:
-        for r_num in list_keys:
-            if r_num == ch:
+        for r_rez in list_keys:
+            if r_rez == ch:
                 if rom_val.get(ch) <= last_rom:
-                    num += to_subtract(list_num)
+                    rez += to_subtract(list_num)
                     list_num = [rom_val.get(ch)]
                 else:
                     list_num.append(rom_val.get(ch))
