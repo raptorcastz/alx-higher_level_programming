@@ -1,4 +1,9 @@
-'''Write a function that adds all unique integers in a list (only once for each integer).
+#!/usr/bin/python3
+def uniq_add(my_list=[]):
+    uniq_list = set(my_list)
+    num = 0
 
-Prototype: def uniq_add(my_list=[]):
-You are not allowed to import any module'''
+    for i in uniq_list:
+        num += i
+
+    return (num)
