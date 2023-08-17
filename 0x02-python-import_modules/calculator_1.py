@@ -7,7 +7,7 @@ def add(a, b):
         b: second integer
 
     Returns:
-        The return value. a + b
+    The return value. a + b
 
     return (a + b)
 
@@ -39,13 +39,12 @@ def mul(a, b):
 
 
 def div(a, b):
-    My division function
+My division function
 
     Args:
-        a: first integer
-        b: second integer
-
-    Returns:
-        The return value. a / b
+        a: first_integer
+        b: second_integer
+        Returns:
+The return value. a / b
 
     return int(a / b)
