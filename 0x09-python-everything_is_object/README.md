@@ -650,7 +650,6 @@ Why? (optional blog post :))
 Hint: NSMALLPOSINTS, NSMALLNEGINTS
 
 
-
 Repo:
 
 GitHub repository: alx-higher_level_programming
