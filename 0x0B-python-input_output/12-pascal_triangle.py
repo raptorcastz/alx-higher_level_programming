@@ -19,3 +19,4 @@ def pascal_triangle(n):
         tmp.append(1)
         triangles.append(tmp)
     return triangles
+
