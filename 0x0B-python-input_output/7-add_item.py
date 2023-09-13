@@ -1,21 +1,15 @@
-import argparse
-import json
-from 5-save_to_json_file import save_to_json_file
-from 6-load_from_json_file import load_from_json_file
+#!/usr/bin/python3
+"""Add all arguments to a Python list and save them to a file."""
+import sys
 
-# Set up argument parser
-parser = argparse.ArgumentParser()
-parser.add_argument('items', nargs='*', help="Items to add to the list")
-args = parser.parse_args()
+if __name__ == "__main__":
+    save_to_json_file = __import__('5-save_to_json_file').save_to_json_file
+    load_from_json_file = \
+        __import__('6-load_from_json_file').load_from_json_file
 
-# Load existing list from JSON file, or initialize new list
-try:
-    my_list = load_from_json_file("add_item.json")
-except FileNotFoundError:
-    my_list = []
-
-# Add new items to the list
-my_list.extend(args.items)
-
-# Save list to JSON file
-save_to_json_file(my_list, "add_item.json")
+    try:
+        items = load_from_json_file("add_item.json")
+    except FileNotFoundError:
+        items = []
+    items.extend(sys.argv[1:])
+    save_to_json_file(items, "add_item.json")
