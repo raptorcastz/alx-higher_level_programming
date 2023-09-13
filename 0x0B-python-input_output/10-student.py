@@ -24,4 +24,3 @@ class Student:
                 if key == i:
                     dict[key] = value
         return dict
-
